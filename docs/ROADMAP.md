@@ -77,6 +77,15 @@
 - [ ] Kamar/eTAP integrations
 - [ ] Mobile app wrappers (capacitor)
 
+## Design backlog
+
+Items captured but not yet scheduled. Pull into a phase when prioritised.
+
+- [ ] **Redesign logo mark to reflect "Kete"** (Māori woven basket metaphor). Current star-in-peach-circle is a placeholder from v1 and doesn't express the brand meaning.
+  - Directions to explore: stylised woven pattern, basket silhouette, abstract weave, sprout-in-basket
+  - Keep the peach → terracotta gradient
+  - Must work at 32px (header) and 64px+ (marketing surfaces)
+
 ## Success criteria
 
 **End of Phase 1**: 100+ users signed up, Phase 1 features working reliably
