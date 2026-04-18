@@ -11,7 +11,8 @@
 
 ## What we did
 - Created `/docs` folder structure
-- Wrote foundational docs:
+- Wrote all 9 foundation docs:
+  - README.md (project overview, doc links, v1/v2 repo pointers)
   - PRODUCT.md (product vision, audiences, features, timeline)
   - ARCHITECTURE.md (tech stack decisions)
   - DATA_MODEL.md (database schema)
@@ -19,11 +20,14 @@
   - ROADMAP.md (phased delivery plan)
   - DECISIONS.md (6 initial ADRs)
   - VISUAL_IDENTITY.md (placeholder for v1 extraction)
-- Updated README.md with project overview and doc links
+  - SESSION_NOTES/2026-04-18-foundation.md (this file)
+- Configured global git identity (Gary Gourliegh / gazagnzai@gmail.com) — was unset on this machine
+- Committed foundation docs as `542b95c` and pushed to `origin/main` on github.com/ggourliegh/careerkete-schools
 
 ## Current state
-- Foundation documentation complete
+- Foundation documentation complete and pushed to GitHub
 - No application code yet
+- Session 1 ended here, ready for Session 2
 - Next session focus: extract v1 visual identity + initialise React/Vite project
 
 ## Decisions made
