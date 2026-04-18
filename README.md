@@ -3,7 +3,7 @@
 CareerKete v2 — a career guidance platform for New Zealand students, with a companion admin module for school guidance counsellors.
 
 ## Status
-Phase 0 — Foundation setup (v0.0.1)
+Phase 1 — V2 Solo (v0.1.0). Live at careerkete-schools.pages.dev
 
 ## Quick Links
 - [Product Vision](docs/PRODUCT.md)

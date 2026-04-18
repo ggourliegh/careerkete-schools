@@ -85,6 +85,7 @@ Items captured but not yet scheduled. Pull into a phase when prioritised.
   - Directions to explore: stylised woven pattern, basket silhouette, abstract weave, sprout-in-basket
   - Keep the peach → terracotta gradient
   - Must work at 32px (header) and 64px+ (marketing surfaces)
+- [ ] **Login is not discoverable from the landing page.** The person icon in the top-right of `/` is too subtle for a first-time visitor to find. Needs a more obvious primary CTA or text label. Revisit in Phase 1 UX pass.
 
 ## Success criteria
 
