@@ -1101,3 +1101,14 @@
   .welc h1   { font-size: 24px; }
   .tab       { font-size: 11px; }
 }
+
+/* ════════════════════════════════════════════════════════════
+   REACT ROUTER COMPAT
+   v1 elements like .logo / .tab / .ib / .go were <div>s and <button>s.
+   When wrapped in <Link> they render as <a> and inherit the browser's
+   default underline. Strip it; keep colour overrides where v1 set them
+   explicitly (.go, .tab, .ib all have their own color rules that win).
+   ════════════════════════════════════════════════════════════ */
+
+a.logo, a.tab, a.ib, a.go { text-decoration: none; }
+a.logo { color: inherit; }

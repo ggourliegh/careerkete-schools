@@ -1,12 +1,30 @@
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { AuthProvider } from './lib/auth'
+import ProtectedRoute from './components/ProtectedRoute'
+import Landing from './pages/Landing'
+import Login from './pages/Login'
+import AuthCallback from './pages/AuthCallback'
+import AppHome from './pages/AppHome'
+
+const router = createBrowserRouter([
+  { path: '/', element: <Landing /> },
+  { path: '/login', element: <Login /> },
+  { path: '/auth/callback', element: <AuthCallback /> },
+  {
+    path: '/app',
+    element: (
+      <ProtectedRoute>
+        <AppHome />
+      </ProtectedRoute>
+    ),
+  },
+])
+
 function App() {
   return (
-    <div className="app">
-      <div className="welc">
-        <div className="welc-e">🌱</div>
-        <h1>Career<em>Kete</em></h1>
-        <p>Phase 0 — Vite + React + TypeScript scaffold with v1 visual identity wired up.</p>
-      </div>
-    </div>
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   )
 }
 
