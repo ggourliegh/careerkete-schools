@@ -1,0 +1,47 @@
+/*
+  CareerKete v2 — Base element styles
+  Extracted verbatim from v1. Import after tokens.css.
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden; /* scroll is delegated to view containers, not the page */
+}
+
+body {
+  font-family: 'Nunito', -apple-system, sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(255, 217, 179, .35) 0%, transparent 40%),
+    radial-gradient(circle at 85% 80%, rgba(168, 196, 162, .25) 0%, transparent 45%);
+}
+
+/* App shell — phone-width column centred on tablet/desktop */
+.app {
+  height: 100vh;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  max-width: 720px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Views — only one renders at a time; flex column for vertical layouts */
+.vw {
+  flex: 1;
+  overflow: hidden;
+  display: none;
+  flex-direction: column;
+}
+.vw.active { display: flex; }

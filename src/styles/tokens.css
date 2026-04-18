@@ -1,0 +1,49 @@
+/*
+  CareerKete v2 — Design Tokens
+  Extracted verbatim from v1. Source of truth: docs/VISUAL_IDENTITY.md.
+  Do not change values without updating that doc.
+*/
+
+/* Fraunces (display) + Nunito (body) loaded in a single request.
+   Prefer a <link rel="preconnect"> + <link rel="stylesheet"> in index.html
+   for first-paint performance; the @import here is a fallback so this file
+   is self-sufficient when imported standalone. */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Nunito:wght@400;500;600;700&display=swap');
+
+:root {
+  /* ── Backgrounds & surfaces ── */
+  --cream:  #FBF6EE;  /* page background */
+  --creamW: #F5EBD9;  /* warm cream — hover, inline badges, chips */
+  --paper:  #FFF;     /* card surface */
+
+  /* ── Warm accents (primary brand) ── */
+  --peach:  #FFD9B3;  /* soft peach — gradient start, user avatar */
+  --peachD: #F4A261;  /* peach deep — primary gradient start, focus */
+  --terra:  #E07A5F;  /* terracotta — italic Kete, primary gradient end, accents */
+
+  /* ── Cool accents (secondary) ── */
+  --sage:   #A8C4A2;  /* AI avatar, success, "Saved" */
+  --sageD:  #6B9080;  /* sage gradient end, "Live results" labels */
+
+  /* ── Category accents ── */
+  --blue:   #5B8DEF;  /* modern / tech */
+  --purple: #9B72CF;  /* future / off-beat */
+  --rose:   #E8637A;  /* essential services */
+  --gold:   #D4A843;  /* trade / hands-on */
+
+  /* ── Text ── */
+  --ink:  #2D2A26;    /* primary */
+  --inkS: #5A544D;    /* secondary */
+  --muted:#8A8278;    /* tertiary, metadata, placeholders */
+
+  /* ── Shadows (warm-tinted with the ink RGB) ── */
+  --sh1: 0 2px  8px rgba(45, 42, 38, .06);  /* card rest */
+  --sh2: 0 8px 24px rgba(45, 42, 38, .08);  /* hover, primary CTA rest */
+  --sh3: 0 16px 48px rgba(45, 42, 38, .12); /* hero hover, modal peaks */
+
+  /* ── Radii ── */
+  --r1: 12px;  /* pills, small cards, quick replies */
+  --r2: 18px;  /* default card, message bubble, input wrapper */
+  --r3: 24px;  /* sheet category header */
+  --r4: 32px;  /* bottom-sheet top corners */
+}
